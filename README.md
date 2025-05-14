@@ -1,54 +1,61 @@
-# React + TypeScript + Vite
+# 🔁 Metalogic Website Page Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern redesign of a selected page from the official [Metalogic Software Pvt. Ltd.](https://www.metalogic.com.np) website. The objective was to enhance the user experience, layout, and visual appeal using current UI/UX best practices while meeting the technical requirements provided.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📄 Selected Page
 
-## Expanding the ESLint configuration
+**[About Us]**  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+I selected this page because it had potential for improved layout hierarchy, responsive design, and a more modern user interface. The existing version lacked consistent spacing, animations, and modern design aesthetics, which are now addressed in this version.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🔧 Tech Stack
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Framework**: React.js with **TypeScript**
+- **Styling**: Tailwind CSS
+- **Deployment**: [Vercel]((https://metologic-page-redesign.vercel.app/))
+
+---
+
+## 🚀 Live Demo
+
+🔗 [View Live Site](https://metologic-page-redesign.vercel.app/))
+
+---
+
+## 📦 Features & Improvements
+
+### ✅ Layout
+- Clean and intuitive layout using a responsive grid and flex system
+- Clear content hierarchy for improved navigation
+
+### 🎨 Visual Design
+- Modern color palette with consistent spacing and typography
+- Gradient backgrounds and shadow effects for visual depth
+- Fully responsive across mobile, tablet, and desktop screens
+
+### 🧱 Component-Based Structure
+- Built with reusable and maintainable components:
+  - `Navbar`
+  - `HeroSection`
+  - `StatsCard`
+  - `Footer`
+  - `ResponsiveLayoutWrapper`
+
+### ✨ Interactivity
+- Smooth hover animations and transitions
+- Scroll-based animations with Framer Motion
+- Button effects and modern card hover states
+
+---
+
+## 🌙 Bonus Features
+
+- ✅ **Accessibility Enhancements**:
+  - Semantic HTML structure
+  - ARIA labels on interactive elements
+  - Keyboard navigation support
